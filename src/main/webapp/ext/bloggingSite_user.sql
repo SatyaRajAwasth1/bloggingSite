@@ -30,7 +30,7 @@ CREATE TABLE `user` (
   `gender` varchar(7) NOT NULL,
   `about` varchar(100) DEFAULT 'Just a Hacker',
   `regdate` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  `profile` varchar(100) DEFAULT 'profile.png',
+  `profile` varchar(100) DEFAULT 'default.png',
   PRIMARY KEY (`id`),
   UNIQUE KEY `email_UNIQUE` (`email`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
