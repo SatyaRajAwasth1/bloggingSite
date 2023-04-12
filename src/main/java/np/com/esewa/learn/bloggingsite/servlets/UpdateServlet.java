@@ -34,7 +34,7 @@ public class UpdateServlet extends HttpServlet {
 		String userName = request.getParameter("userName");
 		String userPassword = request.getParameter("userPassword");
 		String about = request.getParameter("about");
-		Part profilePic = request.getPart("profilePic"); //gets an input typ image
+		Part profilePic = request.getPart("profilePic"); //gets an input type image/file
 		String profilePicName = profilePic.getSubmittedFileName(); // gets the name of the submitted profile pic file
 		
 		//Get user from session to fire query for updating respective users data
@@ -45,11 +45,13 @@ public class UpdateServlet extends HttpServlet {
 		user.setEmail(userEmail);
 		user.setName(userName);
 		user.setPassword(userPassword);
-		user.setProfile(profilePicName);
+		if (profilePicName.isEmpty()) {
+			user.setProfile(profilePicName);
+		}
 // updating updated data to database
 		UserDao dao = new UserDao(ConnectionProvider.connectDB());
 		boolean val = dao.updateUser(user);
-		if(val==true) {
+		if(val == true) {
 
 			String path = request.getServletContext().getRealPath("/")+ "img/profImg" +File.separator+user.getProfile();
 			Helper.deletePhoto(path);
