@@ -29,7 +29,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.jsp"><span class="fa fa-home"></span> Home </a>
+              <a class="nav-link" href="#"><span class="fa fa-home"></span> Home </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#"><span class="fa fa-info-circle"></span> About Us</a>
@@ -155,6 +155,93 @@
       </div>
     </div>
   </div>
+</div>
+
+<!-- Banner -->
+<div class="container-fluid p-0 m-0 banner-bg">
+    <div class="jumbotron primary-background text-white">
+        <div class="container banner ">
+            <h3 class="display-4">Hey, <%= user.getName() %> </h3>
+            <h3 class="display-3">Welcome to MaStR</h3>
+            <p>A learners Home, complete Solution to all of the doubts & questionnaire within a domain. With a moto of serving students, teachers & public during their carrier. Guidance, motivation, inspiration, notes, solutions and service.</p>
+            <button class=" btn btn-outline-light btn-lg"><span class="fa fa-external-link fa-spin"></span> Write your first tutorial</button>
+            <a href="#" class=" btn btn-outline-light btn-lg ln"><span class="fa fa-user-circle"></span> Read Now</a>
+        </div>
+    </div>
+</div>
+<!-- Banner end -->
+
+<br/>
+<!-- Cards -->
+<div class="container">
+    <div class="row mb-3">
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Programming in C</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn primary-background text-white">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">OOPs with C++</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn primary-background text-white">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Core Java</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn primary-background text-white">Read More</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row ">
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Advanced Java J2EE</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn primary-background text-white">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Web Devlopment Static</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn primary-background text-white">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Spring Framework</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn primary-background text-white">Read More</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 </div>
       
       
