@@ -35,6 +35,7 @@
 </div>
 </div>
 </div>
+<!-- Banner end -->
 
 <br/>
 <!-- Cards -->
