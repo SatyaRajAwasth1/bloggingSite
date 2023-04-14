@@ -45,22 +45,24 @@ public class UpdateServlet extends HttpServlet {
 		user.setEmail(userEmail);
 		user.setName(userName);
 		user.setPassword(userPassword);
-		if (profilePicName.isEmpty()) {
-			user.setProfile(profilePicName);
-		}
+
 // updating updated data to database
 		UserDao dao = new UserDao(ConnectionProvider.connectDB());
 		boolean val = dao.updateUser(user);
 		if(val == true) {
+			// update image only if new file is uploaded i.e. not null
+			if (!(profilePicName == null) || !(profilePicName.isEmpty())) {
+				user.setProfile(profilePicName);
 
-			String path = request.getServletContext().getRealPath("/")+ "img/profImg" +File.separator+user.getProfile();
-			Helper.deletePhoto(path);
+				String path = request.getServletContext().getRealPath("/") + "img/profImg" + File.separator + user.getProfile();
+				Helper.deletePhoto(path);
 				if (Helper.savePhoto(profilePic.getInputStream(), path)) {
 					// send a message if details successfully updated
-					Message message = new Message("changes updated successfully... ", "success","alert-success");
+					Message message = new Message("changes updated successfully... ", "success", "alert-success");
 					session.setAttribute("msg", message);
-					
+
 				}
+			}
 		else {
 			Message message = new Message("changes couldnt get saved, something went wrong... ", "error","alert-danger");
 			session.setAttribute("msg", message);
