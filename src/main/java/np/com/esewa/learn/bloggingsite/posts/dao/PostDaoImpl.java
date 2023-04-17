@@ -1,11 +1,11 @@
-package np.com.esewa.learn.bloggingsite.dao;
+package np.com.esewa.learn.bloggingsite.posts.dao;
 
-import np.com.esewa.learn.bloggingsite.entities.Post;
+import np.com.esewa.learn.bloggingsite.posts.entities.Post;
 
 import java.sql.Connection;
 import java.util.List;
 
-public class PostDaoImpl implements PostDao{
+public class PostDaoImpl implements PostDao {
     private final Connection connection;
     public PostDaoImpl(Connection connection) {
         this.connection = connection;

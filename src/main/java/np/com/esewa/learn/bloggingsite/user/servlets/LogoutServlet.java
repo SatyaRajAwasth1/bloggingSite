@@ -1,4 +1,4 @@
-package np.com.esewa.learn.bloggingsite.servlets;
+package np.com.esewa.learn.bloggingsite.user.servlets;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
@@ -8,7 +8,7 @@ import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 
-import np.com.esewa.learn.bloggingsite.entities.Message;
+import np.com.esewa.learn.bloggingsite.user.entities.Message;
 
 
 public class LogoutServlet extends HttpServlet {

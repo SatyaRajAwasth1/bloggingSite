@@ -1,7 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@ page import= "np.com.esewa.learn.bloggingsite.entities.*"%>
-    <%@ page errorPage="error_page.jsp" %>
+    <%@ page import= "np.com.esewa.learn.bloggingsite.user.entities.*"%>
+<%@ page import="np.com.esewa.learn.bloggingsite.user.entities.User" %>
+<%@ page errorPage="error_page.jsp" %>
     <% 
     User user = (User) session.getAttribute("currentUser");
     if (user==null){

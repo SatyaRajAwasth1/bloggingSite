@@ -17,7 +17,7 @@
         <description></description>
         <display-name>RegisterServlet</display-name>
         <servlet-name>RegisterServlet</servlet-name>
-        <servlet-class>np.com.esewa.learn.bloggingsite.servlets.RegisterServlet</servlet-class>
+        <servlet-class>np.com.esewa.learn.bloggingsite.user.servlets.RegisterServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>RegisterServlet</servlet-name>
@@ -27,7 +27,7 @@
         <description></description>
         <display-name>LoginServlet</display-name>
         <servlet-name>LoginServlet</servlet-name>
-        <servlet-class>np.com.esewa.learn.bloggingsite.servlets.LoginServlet</servlet-class>
+        <servlet-class>np.com.esewa.learn.bloggingsite.user.servlets.LoginServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
@@ -37,7 +37,7 @@
         <description></description>
         <display-name>LogoutServlet</display-name>
         <servlet-name>LogoutServlet</servlet-name>
-        <servlet-class>np.com.esewa.learn.bloggingsite.servlets.LogoutServlet</servlet-class>
+        <servlet-class>np.com.esewa.learn.bloggingsite.user.servlets.LogoutServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>LogoutServlet</servlet-name>
@@ -47,7 +47,7 @@
         <description></description>
         <display-name>UpdateServlet</display-name>
         <servlet-name>UpdateServlet</servlet-name>
-        <servlet-class>np.com.esewa.learn.bloggingsite.servlets.UpdateServlet</servlet-class>
+        <servlet-class>np.com.esewa.learn.bloggingsite.user.servlets.UpdateServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>UpdateServlet</servlet-name>

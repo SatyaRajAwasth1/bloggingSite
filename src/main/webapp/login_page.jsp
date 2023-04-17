@@ -1,7 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <%@ page errorPage="error_page.jsp" %>
-    <%@ page import="np.com.esewa.learn.bloggingsite.entities.*" %>
+    <%@ page import="np.com.esewa.learn.bloggingsite.user.entities.*" %>
+<%@ page import="np.com.esewa.learn.bloggingsite.user.entities.Message" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,7 +34,7 @@
 		</div>
 		
 		<%
-		Message message = (np.com.esewa.learn.bloggingsite.entities.Message)session.getAttribute("msg");
+		Message message = (Message)session.getAttribute("msg");
 		if (message!=null){
 			%>
 			<div class="alert <%= message.getCssClass() %>" role="alert">

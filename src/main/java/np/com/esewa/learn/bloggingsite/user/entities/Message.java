@@ -1,4 +1,4 @@
-package np.com.esewa.learn.bloggingsite.entities;
+package np.com.esewa.learn.bloggingsite.user.entities;
 
 public class Message {
 private String content;

@@ -1,6 +1,6 @@
-package np.com.esewa.learn.bloggingsite.dao;
+package np.com.esewa.learn.bloggingsite.posts.dao;
 
-import np.com.esewa.learn.bloggingsite.entities.Post;
+import np.com.esewa.learn.bloggingsite.posts.entities.Post;
 
 import java.util.List;
 

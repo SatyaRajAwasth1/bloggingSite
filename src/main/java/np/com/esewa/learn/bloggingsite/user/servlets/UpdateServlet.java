@@ -1,4 +1,4 @@
-package np.com.esewa.learn.bloggingsite.servlets;
+package np.com.esewa.learn.bloggingsite.user.servlets;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.MultipartConfig;
@@ -12,9 +12,9 @@ import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import np.com.esewa.learn.bloggingsite.dao.UserDao;
-import np.com.esewa.learn.bloggingsite.entities.Message;
-import np.com.esewa.learn.bloggingsite.entities.User;
+import np.com.esewa.learn.bloggingsite.user.dao.UserDao;
+import np.com.esewa.learn.bloggingsite.user.entities.Message;
+import np.com.esewa.learn.bloggingsite.user.entities.User;
 import np.com.esewa.learn.bloggingsite.utilities.ConnectionProvider;
 import np.com.esewa.learn.bloggingsite.utilities.Helper;
 
