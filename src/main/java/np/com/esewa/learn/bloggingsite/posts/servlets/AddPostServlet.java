@@ -37,9 +37,14 @@ public class AddPostServlet extends HttpServlet {
 
         OffsetDateTime postedTime = OffsetDateTime.now();
 
-        Post post = new Post( postTitle, postCategory, postBody, author, postTags);
+        Post post = new Post( postTitle, postCategory, postBody, author, postTags, postedTime);
         PostDao postDao = new PostDaoImpl(ConnectionProvider.connectDB());
 
-        postDao.createPost(post);
+        if (!postDao.createPost(post)){
+            response.sendRedirect("add-post.jsp");
+        }
+        else {
+            display.println(" Post added successfully. <a href = \" "+"link\"> </a> to see. ");
+        }
     }
 }
