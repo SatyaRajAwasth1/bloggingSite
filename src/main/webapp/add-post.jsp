@@ -68,25 +68,26 @@
 </nav>
 <%-- Navigation bar ends --%>
 <%--Form for Writing Blog--%>
-<form name="add-blog-form" method="post" onsubmit="validate()">
+<form action="AddPostServlet" name="add-blog-form" method="post" onsubmit="validate()">
     <div class="form-group">
         <label for="postTitle">Post Title</label>
         <input type="text" class="form-control" id="postTitle" placeholder="your blog post title">
     </div>
     <div class="form-group">
         <label for="postCategory">Select Category of Blog</label>
-        <select class="form-control" id="postCategory">
-            <option>Tutorial</option>
-            <option>Error</option>
-            <option>Question</option>
-            <option>Sale</option>
-            <option>Enjoy</option>
+        <select class="form-control" id="postCategory" name="postCategory">
+            <option value="tutorial">Tutorial</option>
+            <option value="error">Error</option>
+            <option value="question">Question</option>
+            <option value="sale">Sale</option>
+            <option value="enjoy">Enjoy</option>
         </select>
     </div>
     <div class="form-group">
         <label for="postBody">Blog Post Body</label>
-        <textarea class="form-control" id="postBody" rows="30"></textarea>
+        <textarea class="form-control" name="postBody" id="postBody" rows="30"></textarea>
     </div>
+    <button type="submit" class="btn btn-primary">Add Post</button>
 </form>
 <%--Script for postBody--%>
 <script>
