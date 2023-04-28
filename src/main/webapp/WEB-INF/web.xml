@@ -53,4 +53,15 @@
         <servlet-name>UpdateServlet</servlet-name>
         <url-pattern>/UpdateServlet</url-pattern>
     </servlet-mapping>
+<!--    servlet mapping for add post -->
+    <servlet>
+        <description></description>
+        <display-name>AddPostServlet</display-name>
+        <servlet-name>AddPostServlet</servlet-name>
+        <servlet-class>np.com.esewa.learn.bloggingsite.posts.servlets.AddPostServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddPostServlet</servlet-name>
+        <url-pattern>/AddPostServlet</url-pattern>
+    </servlet-mapping>
 </web-app>

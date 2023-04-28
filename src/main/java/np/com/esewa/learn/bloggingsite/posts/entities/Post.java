@@ -10,23 +10,43 @@ public class Post {
     private String postTitle;
     private String postBody;
     private String author;
+    private String postCategory;
+    private String [] postTags;
     private OffsetDateTime postedDate;
 
+    public String getPostCategory() {
+        return postCategory;
+    }
+
+    public void setPostCategory(String postCategory) {
+        this.postCategory = postCategory;
+    }
+
+    public String[] getPostTags() {
+        return postTags;
+    }
+
+    public void setPostTags(String[] postTags) {
+        this.postTags = postTags;
+    }
+
     //All args constructor
-    public Post(int postId, String postTitle, String postBody, String author, OffsetDateTime postedDate) {
+    public Post(int postId, String postTitle,String postCategory, String postBody, String author, OffsetDateTime postedDate) {
         this.postId = postId;
         this.postTitle = postTitle;
+        this.postCategory = postCategory;
         this.postBody = postBody;
         this.author = author;
         this.postedDate = postedDate;
     }
 
     // args constructor without postId
-    public Post(String postTitle, String postBody, String author, OffsetDateTime postedDate) {
+    public Post(String postTitle, String postCategory, String postBody, String author, String [] postTags,OffsetDateTime postedDate) {
         this.postTitle = postTitle;
+        this.postCategory = postCategory;
         this.postBody = postBody;
         this.author = author;
-        this.postedDate = postedDate;
+        this.postTags = postTags;
     }
 
 
